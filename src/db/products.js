@@ -1,8 +1,8 @@
-import { v4 as uuid } from "uuid";
+
 
 export const products = [
   {
-    id: uuid(),
+    id: "shirt-001",
     name: "Men's Casual Shirt",
     img: "https://dummyimage.com/300x400/000/fff&text=Shirt+1",
     alt: "Men's Casual Shirt",
@@ -15,7 +15,7 @@ export const products = [
     rating: 4.2,
   },
   {
-    id: uuid(),
+    id: "kurti-001",
     name: "Women's Kurti",
     img: "https://dummyimage.com/300x400/f09/fff&text=Kurti+1",
     alt: "Women's Kurti",
@@ -28,7 +28,7 @@ export const products = [
     rating: 4.4,
   },
   {
-    id: uuid(),
+    id: "jeans-001",
     name: "Men's Slim Fit Jeans",
     img: "https://dummyimage.com/300x400/222/fff&text=Jeans+1",
     alt: "Men's Jeans",
@@ -41,7 +41,7 @@ export const products = [
     rating: 4.3,
   },
   {
-    id: uuid(),
+    id: "jeans-002",
     name: "Women's High Waist Jeans",
     img: "https://dummyimage.com/300x400/ccf/000&text=Jeans+2",
     alt: "Women's Jeans",
@@ -54,7 +54,7 @@ export const products = [
     rating: 4.6,
   },
   {
-    id: uuid(),
+    id: "hoodie-001",
     name: "Unisex Hoodie",
     img: "https://dummyimage.com/300x400/666/fff&text=Hoodie+1",
     alt: "Unisex Hoodie",
@@ -67,7 +67,7 @@ export const products = [
     rating: 4.5,
   },
   {
-    id: uuid(),
+    id: "shirt-002",
     name: "Men's Formal Shirt",
     img: "https://dummyimage.com/300x400/444/fff&text=Shirt+2",
     alt: "Men's Formal Shirt",
@@ -80,7 +80,7 @@ export const products = [
     rating: 4.1,
   },
   {
-    id: uuid(),
+    id: "dress-001",
     name: "Women's Maxi Dress",
     img: "https://dummyimage.com/300x400/f9f/000&text=Dress+1",
     alt: "Women's Maxi Dress",
@@ -93,7 +93,7 @@ export const products = [
     rating: 4.7,
   },
   {
-    id: uuid(),
+    id: "track-001",
     name: "Men's Track Pants",
     img: "https://dummyimage.com/300x400/111/fff&text=Track+1",
     alt: "Men's Track Pants",
@@ -106,7 +106,7 @@ export const products = [
     rating: 4.3,
   },
   {
-    id: uuid(),
+    id: "tshirt-001",
     name: "Women's Activewear T-Shirt",
     img: "https://dummyimage.com/300x400/f66/fff&text=Tshirt+1",
     alt: "Women's T-Shirt",
@@ -119,7 +119,7 @@ export const products = [
     rating: 4.2,
   },
   {
-    id: uuid(),
+    id: "sweatshirt-001",
     name: "Unisex Printed Sweatshirt",
     img: "https://dummyimage.com/300x400/0af/000&text=Sweatshirt+1",
     alt: "Unisex Sweatshirt",
@@ -132,3 +132,4 @@ export const products = [
     rating: 4.6,
   },
 ];
+

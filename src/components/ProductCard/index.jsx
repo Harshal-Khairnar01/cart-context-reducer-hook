@@ -1,8 +1,12 @@
 import React from "react";
 import { useCart } from "../../context/cartContext";
 
-const Products = ({ product }) => {
+import { useNavigate } from "react-router-dom";
+
+const ProductCard = ({ product }) => {
   const { cartDispatch } = useCart();
+
+  const navigate = useNavigate();
 
   const onAddToCartClick = () => {
     cartDispatch({
@@ -13,14 +17,18 @@ const Products = ({ product }) => {
 
   const onRemoveFromCartClick = () => {
     cartDispatch({
-        type: "REMOVE_FROM_CART",
-        payload: product,
-    })
-  }
+      type: "REMOVE_FROM_CART",
+      payload: product,
+    });
+  };
+
+  const onTitleClick = () => {
+    navigate(`/product-details/${product.id}`);
+  };
 
   return (
     <div className="product">
-      <div>
+      <div onClick={onTitleClick} style={{ cursor: "pointer" }}>
         <h3>{product.name}</h3>
       </div>
       <div>
@@ -36,4 +44,4 @@ const Products = ({ product }) => {
   );
 };
 
-export default Products;
+export default ProductCard;
