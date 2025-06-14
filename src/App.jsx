@@ -1,10 +1,12 @@
 import "./App.css";
 
 import React from "react";
-import Navbar from "./components/Navbar";
-import { products } from "./db/products";
-import Products from "./components/Products";
+import { Routes, Route } from "react-router-dom";
+
 import { useCart } from "./context/cartContext";
+import Product from "./pages/Product";
+import ProductDetails from "./pages/ProductDetails";
+import Cart from "./pages/Cart";
 
 const App = () => {
 
@@ -12,16 +14,11 @@ const App = () => {
     console.log(cartItems)
 
   return (
-    <div className="App">
-      <Navbar />
-      <h1 className="head">Products</h1>
-      <div className="container">
-        {products.length > 0 &&
-          products.map((product) => (
-            <Products key={product.id} product={product} />
-          ))}
-      </div>
-    </div>
+   <Routes>
+     <Route path="/" element={<Product />} />
+     <Route path="/cart" element={<Cart />} />
+     <Route path="/product-details/:productId" element={<ProductDetails />} />
+   </Routes>
   );
 };
 
